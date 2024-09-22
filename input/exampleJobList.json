@@ -1,0 +1,19 @@
+[
+  {
+    "name": "TEST1",
+    "folder": "./input/test1/",
+    "documents": [
+      "Example1.pdf",
+      "Example2.pdf"
+    ]
+  },
+  {
+    "name": "TEST2",
+    "folder": "./input/test2/",
+    "documents": [
+      "Example1.pdf",
+      "Example2.pdf",
+      "Example3.pdf"
+    ]
+  }
+]

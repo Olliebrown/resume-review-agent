@@ -1,0 +1,9 @@
+node_modules/
+
+input/**
+!input/exampleJobList.json
+
+output/**
+!output/.gitkeep
+
+.DS_Store
