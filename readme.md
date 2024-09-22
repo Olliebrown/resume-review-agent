@@ -2,7 +2,7 @@
 This is a tool that will review resumes and provide feedback on how to improve them. It utilizes a locally installed and running LLM AI tool. It is designed specifically to help review resumes for the CS program at UW Stout.
 
 ## Installation & Usage
-You will need a locally installed instance of Ollama with the mistral LLM running on your network. Edit the `src/langchainHelper.js` file to the IP address and port of this instance. See [https://github.com/jacoblee93/fully-local-pdf-chatbot] for instructions on configuring Ollama and installing Mistral.
+You will need a locally installed instance of Ollama with the mistral LLM running on your network. Edit the `src/langchainHelper.js` file to the IP address and port of this instance. See [fully-local-pdf-chatbot](https://github.com/jacoblee93/fully-local-pdf-chatbot) for instructions on configuring Ollama and installing Mistral.
 
 Once Ollama is configured and running, follow these steps to use the tool:
 1. Clone the repository
