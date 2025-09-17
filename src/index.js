@@ -14,8 +14,8 @@ const MAIN_HEADING = '# AI Review of Resume'
 const MAIN_CONTENT = `
 This document contains the results of an AI review of your resume. The specific system used was
 running on a local machine via [Ollama](https://ollama.com/), powered by the open source weights
-from the [Mistral LLM](https://mistral.ai/). No content from your resume was uploaded to the
-cloud or provided to a third party in any way.
+from the [Mistral LLM](https://mistral.ai/), specifically [the 'NeMo' variant](https://ollama.com/library/mistral-nemo).
+No content from your resume was uploaded to the cloud or provided to a third party in any way.
 
 ## How to Interpret the Results
 The AI was given no other context besides your resume and a training prompt encouraging it to be
@@ -140,7 +140,7 @@ const questionList = [
   'Does the document have a link to the student\'s LinkedIn profile?',
   'Does the document have a link to the student\'s GitHub profile or any GitHub repositories?',
   'Does anything seem to be missing from this document?',
-  'How could this resume be improved?'
+  'How could this resume be improved? (please do not provide an example, just a summary)'
 ]
 
 async function askQuestions () {
@@ -219,4 +219,4 @@ async function main (inputJobListFilename) {
   outputUnknownWords()
 }
 
-main('./input/jobList.json')
+main('./input/jobList2.json')

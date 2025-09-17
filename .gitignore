@@ -6,5 +6,7 @@ input/**
 output/**
 !output/.gitkeep
 
+ollama-monitor
+
 .DS_Store
 .env

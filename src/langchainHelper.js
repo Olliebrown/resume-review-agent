@@ -36,9 +36,9 @@ const HISTORY_AWARE_PROMPT_TEXT = `Given the above conversation, generate a natu
 get information relevant to the conversation. Do not respond with anything except the query.`
 
 const chatModel = new ChatOllama({
-  baseUrl: 'http://192.168.50.226:11435',
+  baseUrl: 'http://97.90.231.12:11434',
   temperature: 0.3,
-  model: 'mistral'
+  model: 'mistral-nemo'
 })
 
 const responseChainPrompt = ChatPromptTemplate.fromMessages([
