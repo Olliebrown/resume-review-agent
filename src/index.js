@@ -219,4 +219,4 @@ async function main (inputJobListFilename) {
   outputUnknownWords()
 }
 
-main('./input/jobList2.json')
+main('./input/FA25-JobList.json')

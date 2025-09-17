@@ -9,8 +9,8 @@ import { createStuffDocumentsChain } from 'langchain/chains/combine_documents'
 import { createHistoryAwareRetriever } from 'langchain/chains/history_aware_retriever'
 
 const embeddings = new HuggingFaceTransformersEmbeddings({
-  modelName: 'Xenova/all-MiniLM-L6-v2'
-  // modelName: 'nomic-ai/nomic-embed-text-v1' // More powerful but slower
+  // modelName: 'Xenova/all-MiniLM-L6-v2'
+  modelName: 'nomic-ai/nomic-embed-text-v1' // More powerful but slower
 })
 
 const OLLAMA_RESPONSE_SYSTEM_TEMPLATE = `You are an experienced researcher, expert at interpreting and answering questions based on
@@ -36,7 +36,7 @@ const HISTORY_AWARE_PROMPT_TEXT = `Given the above conversation, generate a natu
 get information relevant to the conversation. Do not respond with anything except the query.`
 
 const chatModel = new ChatOllama({
-  baseUrl: 'http://97.90.231.12:11434',
+  baseUrl: 'http://localhost:11434',
   temperature: 0.3,
   model: 'mistral-nemo'
 })
